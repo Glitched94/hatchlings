@@ -1,13 +1,14 @@
 {
-  "name": "kol-js-starter",
+  "name": "hatchlings",
   "version": "1.0.0",
-  "description": "Example package for KoLmafia TypeScript scripts.",
-  "main": "KoLmafia/scripts/kol-js-starter/main-script-name.js",
+  "description": "A script to find all familiar hatchlings you haven't used before in your inventory.",
+  "main": "main",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "yarn run build:types && yarn run build:js",
     "build:types": "tsc",
     "build:js": "webpack",
+    "format": "prettier -w src",
     "lint": "eslint src && prettier --check .",
     "watch": "webpack --watch --progress"
   },
@@ -30,15 +31,16 @@
     "webpack-cli": "^4.8.0"
   },
   "dependencies": {
-    "core-js": "^3.16.4",
-    "kolmafia": ">=1.2.0",
-    "libram": ">=0.3.0"
+    "core-js": "^3.35.0",
+    "grimoire-kolmafia": "^0.3.26",
+    "kolmafia": "^5.27804.0",
+    "libram": "^0.8.22"
   },
-  "author": "Captain Scotch",
-  "license": "ISC",
+  "author": "The Powers That Be",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/docrostov/kol-js-starter.git"
+    "url": "git+https://github.com/Glitched94/hatchlings.git"
   },
   "keywords": [
     "KoLMafia",
@@ -46,7 +48,7 @@
     "TS"
   ],
   "bugs": {
-    "url": "https://github.com/docrostov/kol-js-starter/issues"
+    "url": "https://github.com/Glitched94/hatchlings/issues"
   },
-  "homepage": "https://github.com/docrostov/kol-js-starter#readme"
+  "homepage": "https://github.com/Glitched94/hatchlings#readme"
 }
